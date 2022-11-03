@@ -1,5 +1,7 @@
 # react-slots
 
+[![npm](https://img.shields.io/npm/v/@colebemis/react-slots.svg)](https://www.npmjs.com/package/@colebemis/react-slots)
+
 ## Install
 
 ```shell
