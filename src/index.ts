@@ -3,10 +3,7 @@ import * as React from "react";
 type SlotConfig = Record<string, React.ComponentType>;
 
 type SlotElements<Type extends SlotConfig> = {
-  [Property in keyof Type]: React.ReactElement<
-    React.ComponentProps<Type[Property]>,
-    Type[Property]
-  >;
+  [Property in keyof Type]: React.ReactElement;
 };
 
 export function useSlots<T extends SlotConfig>(
@@ -25,10 +22,7 @@ export function useSlots<T extends SlotConfig>(
     const slotKey = getKeyByValue(config, child.type);
 
     if (slotKey && !slots[slotKey]) {
-      slots[slotKey] = child as React.ReactElement<
-        React.ComponentProps<T[keyof T]>,
-        T[keyof T]
-      >;
+      slots[slotKey] = child;
       return;
     }
 
