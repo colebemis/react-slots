@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`works as expected 1`] = `
+<div>
+  <div>
+    <header
+      style="padding: 16px;"
+    >
+      Header
+    </header>
+    <main>
+      <h1>
+        Hello, slots!
+      </h1>
+    </main>
+    <footer
+      style="padding: 4px;"
+    >
+      Footer
+    </footer>
+  </div>
+</div>
+`;

@@ -1,9 +1,5 @@
 # react-slots
 
-## TODO
-
-- [ ] Write tests
-
 ## Install
 
 ```shell
